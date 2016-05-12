@@ -64,10 +64,19 @@ def parse_dhcpd_conf(config_file):
 
 		elif key == '}':
 			in_config = False
-			subnets[subnet['interface']] = subnet
+			subnet_add(subnets, subnet)
 			subnet = {}
 
 	return subnets
+
+def subnet_add(subnets, subnet):
+	if 'interface' not in subnet:
+		subnet['interface'] = 'global'
+	sub_name = subnet['interface']
+	if sub_name not in subnets:
+		subnets[sub_name] = subnet
+	else:
+		pass #needs to be implemented
 
 def count_active_leases(all_leases, now, subnets):
 	count_active = 0
