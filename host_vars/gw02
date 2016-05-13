@@ -1,5 +1,5 @@
-vm_id: 2
-server_id: 2
+vm_id: 3
+server_id: 3
 server_besitzer: "Freifunk Lippe"
 
 server_ipv4_nat: 185.66.193.54/31
@@ -8,40 +8,40 @@ server_ipv4_nat: 185.66.193.54/31
 ffrl_tun:
 - name: dus1
 gre_target: 185.66.193.0
-v4_local: 100.64.6.41/31
-v4_remote: 100.64.6.40/31
-v6_local: 2a03:2260:0:314::2/64
-v6_remote: 2a03:2260:0:314::1/64
+v4_local: 100.64.6.53/31
+v4_remote: 100.64.6.52/31
+v6_local: 2a03:2260:0:31a::2/64
+v6_remote: 2a03:2260:0:31a::1/64
 - name: dus2
 gre_target: 185.66.193.1
-v4_local: 100.64.6.47/31
-v4_remote: 100.64.6.46/31
-v6_local: 2a03:2260:0:317::2/64
-v6_remote: 2a03:2260:0:317::1/64
+v4_local: 100.64.6.59/31
+v4_remote: 100.64.6.58/31
+v6_local: 2a03:2260:0:31d::2/64
+v6_remote: 2a03:2260:0:31d::1/64
 - name: fra1
 gre_target: 185.66.194.0
-v4_local: 100.64.6.39/31
-v4_remote: 100.64.6.38/31
-v6_local: 2a03:2260:0:313::2/64
-v6_remote: 2a03:2260:0:313::1/64
+v4_local: 100.64.6.51/31
+v4_remote: 100.64.6.50/31
+v6_local: 2a03:2260:0:319::2/64
+v6_remote: 2a03:2260:0:319::1/64
 - name: fra2
 gre_target: 185.66.194.1
-v4_local: 100.64.6.45/31
-v4_remote: 100.64.6.44/31
-v6_local: 2a03:2260:0:316::2/64
-v6_remote: 2a03:2260:0:316::1/64
+v4_local: 100.64.6.57/31
+v4_remote: 100.64.6.56/31
+v6_local: 2a03:2260:0:31c::2/64
+v6_remote: 2a03:2260:0:31c::1/64
 - name: ber1
 gre_target: 185.66.195.0
-v4_local: 100.64.6.37/31
-v4_remote: 100.64.6.36/31
-v6_local: 2a03:2260:0:312::2/64
-v6_remote: 2a03:2260:0:312::1/64
+v4_local: 100.64.6.49/31
+v4_remote: 100.64.6.48/31
+v6_local: 2a03:2260:0:318::2/64
+v6_remote: 2a03:2260:0:318::1/64
 - name: ber2
 gre_target: 185.66.195.1
-v4_local: 100.64.6.43/31
-v4_remote: 100.64.6.42/31
-v6_local: 2a03:2260:0:315::2/64
-v6_remote: 2a03:2260:0:315::1/64
+v4_local: 100.64.6.55/31
+v4_remote: 100.64.6.54/31
+v6_local: 2a03:2260:0:31b::2/64
+v6_remote: 2a03:2260:0:31b::1/64
 
 domaenenliste:
 "01":
@@ -51,4 +51,12 @@ server_id: 2
 "02":
 dhcp_start: 10.15.8.26
 dhcp_ende: 10.15.11.255
+server_id: 2
+"03":
+dhcp_start: 10.15.16.26
+dhcp_ende: 10.15.19.255
+server_id: 2
+"04":
+dhcp_start: 10.15.24.26
+dhcp_ende: 10.15.27.255
 server_id: 2
