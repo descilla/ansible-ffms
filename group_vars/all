@@ -57,7 +57,7 @@ ff_network:
   # IPv6 adressraum
   v6_network: 2a03:2260:2004::/48 
 
-hostname_suffix: ".servers.freifunk-lippe.de"
+hostname_suffix: ".freifunk-lippe.de"
 
 administratorenteam:
   - "collimas"
