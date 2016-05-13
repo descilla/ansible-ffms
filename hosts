@@ -3,9 +3,9 @@
 services    ansible_ssh_host=37.120.164.172
 
 [gateways]
-# Gateways mit oder ohne Direktanbindung FFRL
-# Immer mit Multidomänen-L2TP
 gw01	ansible_ssh_host=109.236.82.90
 gw02	ansible_ssh_host=109.236.81.164
+
+[backbone]
 
 
