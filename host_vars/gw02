@@ -47,16 +47,16 @@ domaenenliste:
 "01":
 dhcp_start: 10.15.0.26
 dhcp_ende: 10.15.3.255
-server_id: 2
+server_id: 3
 "02":
 dhcp_start: 10.15.8.26
 dhcp_ende: 10.15.11.255
-server_id: 2
+server_id: 3
 "03":
 dhcp_start: 10.15.16.26
 dhcp_ende: 10.15.19.255
-server_id: 2
+server_id: 3
 "04":
 dhcp_start: 10.15.24.26
 dhcp_ende: 10.15.27.255
-server_id: 2
+server_id: 3
