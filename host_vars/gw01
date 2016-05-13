@@ -6,28 +6,49 @@ server_ipv4_nat: 185.66.193.54/31
 
 
 ffrl_tun:
-- name: dus
+- name: dus1
 gre_target: 185.66.193.0
-v4_local: 100.64.0.209/31
-v4_remote: 100.64.0.208/31
-v6_local: 2a03:2260:0:6e::2/64
-v6_remote: 2a03:2260:0:6e::1/64
-- name: fra
+v4_local: 100.64.6.41/31
+v4_remote: 100.64.6.40/31
+v6_local: 2a03:2260:0:314::2/64
+v6_remote: 2a03:2260:0:314::1/64
+- name: dus2
+gre_target: 185.66.193.1
+v4_local: 100.64.6.47/31
+v4_remote: 100.64.6.46/31
+v6_local: 2a03:2260:0:317::2/64
+v6_remote: 2a03:2260:0:317::1/64
+- name: fra1
 gre_target: 185.66.194.0
-v4_local: 100.64.0.207/31
-v4_remote: 100.64.0.206/31
-v6_local: 2a03:2260:0:6d::2/64
-v6_remote: 2a03:2260:0:6d::1/64
--name: ber
+v4_local: 100.64.6.39/31
+v4_remote: 100.64.6.38/31
+v6_local: 2a03:2260:0:313::2/64
+v6_remote: 2a03:2260:0:313::1/64
+- name: fra2
+gre_target: 185.66.194.1
+v4_local: 100.64.6.45/31
+v4_remote: 100.64.6.44/31
+v6_local: 2a03:2260:0:316::2/64
+v6_remote: 2a03:2260:0:316::1/64
+- name: ber1
 gre_target: 185.66.195.0
-v4_local: 
+v4_local: 100.64.6.37/31
+v4_remote: 100.64.6.36/31
+v6_local: 2a03:2260:0:312::2/64
+v6_remote: 2a03:2260:0:312::1/64
+- name: ber2
+gre_target: 185.66.195.1
+v4_local: 100.64.6.43/31
+v4_remote: 100.64.6.42/31
+v6_local: 2a03:2260:0:312::2/64
+v6_remote: 2a03:2260:0:312::1/64
 
 domaenenliste:
 "01":
-dhcp_start: 10.43.96.26
-dhcp_ende: 10.43.99.255
+dhcp_start: 10.15.0.26
+dhcp_ende: 10.15.3.255
 server_id: 2
 "02":
-dhcp_start: 10.43.104.26
-dhcp_ende: 10.43.107.255
+dhcp_start: 10.15.8.26
+dhcp_ende: 10.15.11.255
 server_id: 2
