@@ -62,6 +62,8 @@ hostname_suffix: ".freifunk-lippe.de"
 administratorenteam:
   - "collimas"
   - "mpw"
+  - "tronde"
+  - "gucky"
 
 collectd:
   collect_dhcp: false
