@@ -13,8 +13,8 @@
   notify:
     - restart bind9
 
-- name: create named.conf.freifunk-muensterland
-  template: src=named.conf.freifunk-muensterland.j2 dest=/etc/bind/named.conf.freifunk-muensterland
+- name: create named.conf.freifunk-lippe
+  template: src=named.conf.freifunk-lippe.j2 dest=/etc/bind/named.conf.freifunk-lippe
   notify:
     - restart bind9
 
