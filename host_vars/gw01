@@ -2,7 +2,7 @@ vm_id: 2
 server_id: 2
 server_besitzer: "Freifunk Lippe"
 
-server_ipv4_nat: 185.66.193.54/31
+server_ipv4_nat: 185.66.193.54/32
 
 
 ffrl_tun:
