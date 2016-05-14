@@ -23,8 +23,8 @@ done
 
 # Daten der Legacy-Domäne per wget holen
 mkdir -p /var/ffmap/data_legacy /var/www/html/maps/data_legacy
-wget http://192.168.43.3/map/data/nodes.json -O /var/ffmap/data_legacy/nodes.json
-wget http://192.168.43.3/map/data//graph.json -O /var/ffmap/data_legacy/graph.json
+wget http://map.freifunk-lippe.de/data/nodes.json -O /var/ffmap/data_legacy/nodes.json
+wget http://map.freifunk-lippe.de/data//graph.json -O /var/ffmap/data_legacy/graph.json
 mv /var/ffmap/data_legacy/* /var/www/html/maps/data_legacy
 
 # Daten mit merge_map_data.py zuammenfügen
@@ -51,15 +51,15 @@ for i in /var/www/html/maps/data?*; do
             *)       name="Community${suf//_/" "}" ;;
         esac
         mkdir /var/www/html/maps/map${suf} && cd /var/www/html/maps/map${suf} && ln -s ../map/* . 
-	cd /var/www/html/maps/map${suf} && rm config.json && sed -e "s#/data/#/data$suf/#" -e "s#Münsterland#Münsterland - ${name}#" -e "s#0.5#${scale[$suf]-1.0}#" <../map/config.json >config.json
+	cd /var/www/html/maps/map${suf} && rm config.json && sed -e "s#/data/#/data$suf/#" -e "s#Lippe#Lippe - ${name}#" -e "s#0.5#${scale[$suf]-1.0}#" <../map/config.json >config.json
         cat <<EOF > /var/www/html/maps/index.html
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Freifunk Münsterland - Karten</title>
+<title>Freifunk Lippe - Karten</title>
 </head>
 <body>
-<h1>Freifunk Münsterland - Karten</h1>
+<h1>Freifunk Lippe - Karten</h1>
 <p><a href="map/">Gesamtkarte</a></p>
 <p>
 EOF
@@ -80,7 +80,7 @@ EOF
 </p>
 <hr>
 <p><a href="http://umap.openstreetmap.fr/de/map/ffms-domanen_62931">Gebiete der Domänen</a></p>
-<p><a href="https://freifunk-muensterland.de/wiki/doku.php?id=technik:ip-aufteilung">IP-Aufteilung und Status der Domänen</a></p>
+<p>
 </body>
 </html>
 EOF
