@@ -8,7 +8,7 @@
  Freifunk Münsterland 
  
  Server:  {{ inventory_hostname }}
- Besitzer: {{ server_besitzer }}
+ Besitzer: {{ "Freifunk Lippe" }}
 
  Öffentliche IPs: {{ansible_eth0.ipv4.address}} / {{ansible_eth0.ipv6[0].address}}
 {% if domaenenliste is defined %}
