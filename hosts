@@ -1,10 +1,7 @@
 # Service-VM für Zentrale Dienste (Karte, Statistik)  
 [services]
 services    ansible_ssh_host=109.236.82.213
-<<<<<<< HEAD
-=======
 
->>>>>>> dd6d802b4971ab7a355fdf39391cfa202479a213
 [gateways]
 gw01	ansible_ssh_host=109.236.82.90
 gw02	ansible_ssh_host=109.236.81.164
