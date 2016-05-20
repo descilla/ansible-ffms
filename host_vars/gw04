@@ -1,47 +1,47 @@
-vm_id: 3
-server_id: 3
+vm_id: 5
+server_id: 5
 server_besitzer: "Freifunk Lippe"
 
-server_ipv4_nat: 185.66.193.55/32
+server_ipv4_nat: 185.66.194.55/32
 
 
 ffrl_tun:
 - name: dus1
   gre_target: 185.66.193.0
-  v4_local: 100.64.6.53/31
-  v4_remote: 100.64.6.52/31
-  v6_local: 2a03:2260:0:31a::2/64
-  v6_remote: 2a03:2260:0:31a::1/64
+  v4_local: 100.64.6.133/31
+  v4_remote: 100.64.6.132/31
+  v6_local: 2a03:2260:0:366::2/64
+  v6_remote: 2a03:2260:0:366::1/64
 - name: dus2
   gre_target: 185.66.193.1
-  v4_local: 100.64.6.59/31
-  v4_remote: 100.64.6.58/31
-  v6_local: 2a03:2260:0:31d::2/64
-  v6_remote: 2a03:2260:0:31d::1/64
+  v4_local: 100.64.6.139/31
+  v4_remote: 100.64.6.138/31
+  v6_local: 2a03:2260:0:369::2/64
+  v6_remote: 2a03:2260:0:369::1/64
 - name: fra1
   gre_target: 185.66.194.0
-  v4_local: 100.64.6.51/31
-  v4_remote: 100.64.6.50/31
-  v6_local: 2a03:2260:0:319::2/64
-  v6_remote: 2a03:2260:0:319::1/64
+  v4_local: 100.64.6.131/31
+  v4_remote: 100.64.6.130/31
+  v6_local: 2a03:2260:0:365::2/64
+  v6_remote: 2a03:2260:0:365::1/64
 - name: fra2
   gre_target: 185.66.194.1
-  v4_local: 100.64.6.57/31
-  v4_remote: 100.64.6.56/31
-  v6_local: 2a03:2260:0:31c::2/64
-  v6_remote: 2a03:2260:0:31c::1/64
+  v4_local: 100.64.6.137/31
+  v4_remote: 100.64.6.136/31
+  v6_local: 2a03:2260:0:368::2/64
+  v6_remote: 2a03:2260:0:368::1/64
 - name: ber1
   gre_target: 185.66.195.0
-  v4_local: 100.64.6.49/31
-  v4_remote: 100.64.6.48/31
-  v6_local: 2a03:2260:0:318::2/64
-  v6_remote: 2a03:2260:0:318::1/64
+  v4_local: 100.64.6.129/31
+  v4_remote: 100.64.6.128/31
+  v6_local: 2a03:2260:0:364::2/64
+  v6_remote: 2a03:2260:0:364::1/64
 - name: ber2
   gre_target: 185.66.195.1
-  v4_local: 100.64.6.55/31
-  v4_remote: 100.64.6.54/31
-  v6_local: 2a03:2260:0:31b::2/64
-  v6_remote: 2a03:2260:0:31b::1/64
+  v4_local: 100.64.6.135/31
+  v4_remote: 100.64.6.134/31
+  v6_local: 2a03:2260:0:367::2/64
+  v6_remote: 2a03:2260:0:367::1/64
 
 domaenenliste:
    "01":
