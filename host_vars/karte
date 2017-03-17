@@ -1,0 +1,15 @@
+server_besitzer: "FFLIP"
+vm_id: 12
+server_id: 12
+
+mapconfig:
+  globalInfos: 
+   - name: "Status-Monitor"
+     iframe: null
+  nodeInfos:
+   - name: "Clientstatistik"
+     iframe: null
+     caption: "Knoten {NODE_ID}"
+   - name: "Traffic"
+     iframe: null
+caption: "Knoten {NODE_ID}"
