@@ -71,3 +71,22 @@ collectd:
   collect_l2tp: false
   collect_ipv4ipv6: false
   collect_sysctl: false
+
+bind:                  
+  ffms_zone_type: slave
+  ffms_zone_masters:   
+    - 109.236.82.213
+
+logrotate:
+  cycle: daily
+  count: 3
+
+freifunk: 
+  name: "Freifunk Lippe"
+  kurzname: "fflip"
+  email: info@freifunk-lippe.de
+  domain: freifunk-lippe.de
+
+bind_zonemaster:
+  server: service.freifunk-lippe.de
+  email: info.freifunk-lippe.de

@@ -6,8 +6,4 @@ services    ansible_ssh_host=109.236.82.213
 gw01	ansible_ssh_host=109.236.82.90
 gw02	ansible_ssh_host=109.236.81.164
 gw03  ansible_ssh_host=78.47.64.254
-gw04  ansible_ssh_host=109.236.82.91
-
-[backbone]
-
-
+#gw04  ansible_ssh_host=109.236.82.91
